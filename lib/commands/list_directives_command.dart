@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:nyxx/nyxx.dart';
 import 'package:nyxx_interactions/nyxx_interactions.dart';
 
-import '../app_strings.dart' as app_strings;
+import '../config/app_strings.dart' as app_strings;
 
 const commandName = 'listar';
 const commandDescription = 'Lista todas as diretivas cadastradas';

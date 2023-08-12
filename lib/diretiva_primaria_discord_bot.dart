@@ -5,7 +5,7 @@ import 'package:dotenv/dotenv.dart';
 import 'package:nyxx/nyxx.dart';
 import 'package:nyxx_interactions/nyxx_interactions.dart';
 
-import 'app_strings.dart' as app_strings;
+import 'config/app_strings.dart' as app_strings;
 import 'commands/add_directive_command.dart' as add_directive_command;
 import 'commands/list_directives_command.dart' as list_directives_command;
 import 'commands/remove_directive_command.dart' as remove_directive_command;
