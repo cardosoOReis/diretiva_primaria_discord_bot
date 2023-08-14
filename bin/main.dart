@@ -1,6 +1,5 @@
-import 'package:diretiva_primaria_discord_bot/diretiva_primaria_discord_bot.dart'
-    as diretiva_primaria_discord_bot;
+import 'package:diretiva_primaria_discord_bot/bot.dart' as bot;
 
 Future<void> main(List<String> arguments) async {
-  await diretiva_primaria_discord_bot.run();
+  await bot.run();
 }
