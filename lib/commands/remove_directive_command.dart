@@ -44,7 +44,10 @@ FutureOr<void> _handler(ISlashCommandInteractionEvent event) async {
 
   final result = await removeDirective(indexArg);
 
-  await event.respond(MessageBuilder.content(formatResponse(result)));
+  await event.respond(
+    MessageBuilder.content(formatResponse(result)),
+    hidden: true,
+  );
 }
 
 String formatResponse(bool isSucess) =>

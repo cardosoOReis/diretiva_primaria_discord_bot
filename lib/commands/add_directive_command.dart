@@ -43,5 +43,8 @@ FutureOr<void> _handler(ISlashCommandInteractionEvent event) async {
   final directive = directiveArg?.value?.toString() ?? '';
   await addDirective(directive);
 
-  await event.respond(MessageBuilder.content(responseMessage));
+  await event.respond(
+    MessageBuilder.content(responseMessage),
+    hidden: true,
+  );
 }

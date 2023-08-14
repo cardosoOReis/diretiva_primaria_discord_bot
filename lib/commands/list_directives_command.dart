@@ -15,7 +15,10 @@ final command = SlashCommandBuilder(commandName, commandDescription, [])
 FutureOr<void> _handler(ISlashCommandInteractionEvent event) async {
   final directives = await listDirectives();
 
-  await event.respond(MessageBuilder.content(formatDirectives(directives)));
+  await event.respond(
+    MessageBuilder.content(formatDirectives(directives)),
+    hidden: true,
+  );
 }
 
 Future<List<String>> listDirectives() async {

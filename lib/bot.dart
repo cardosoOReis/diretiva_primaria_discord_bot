@@ -19,7 +19,7 @@ Future<void> run() async {
 
   final cron = Cron();
 
-  cron.schedule(Schedule.parse("40 9 * * 1-5"), () async {
+  cron.schedule(Schedule.parse("40 12 * * 1-5"), () async {
     final directives = await list_directives_command.listDirectives();
     await sendMessage(
       bot: bot,
